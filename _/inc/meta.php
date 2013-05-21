@@ -1,0 +1,1 @@
+<section class="meta">Posted on <time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('F jS, Y') ?></time> in <?php $categories_list ?></section>

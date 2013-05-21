@@ -1,0 +1,1 @@
+<h3 class="tag"><?php the_tags('', ', ', ''); ?></h3>
