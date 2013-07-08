@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#game-404-canvas"),t=e.get(0).getContext("2d");t.fillRect(40,40,100,100)});
