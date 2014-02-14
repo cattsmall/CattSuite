@@ -5,16 +5,16 @@ Template Name: Home
 get_header('home'); ?>
 
 <!-- carousel -->
-<section id="headerCarousel" class="carousel slide">
+<!-- <section id="headerCarousel" class="carousel slide"> -->
 	<!-- catt illust + text -->
-	<article class="catt">
+	<!-- <article class="catt">
 		<figure>
-			<div class="body"></div>
+			<div class="body"></div> -->
 			<!-- <figcaption>Looking for an experienced Graphic &amp; Web Designer? You’ve found one.</figcaption> -->
-		</figure>
-	</article>
+		<!-- </figure>
+	</article> -->
 	<!-- portfolio carousel -->
-	<article class="carousel-inner">
+	<!-- <article class="carousel-inner">
 		<figure class="item active"></figure>
 		<figure class="item"></figure>
 		<figure class="item"></figure>
@@ -25,7 +25,7 @@ get_header('home'); ?>
 	</article>
 	<a class="left carousel-control ss-icon ss-standard" href="#headerCarousel" data-slide="prev">&#x25C5;</a>
 	<a class="right carousel-control ss-icon ss-standard" href="#headerCarousel" data-slide="next">&#x25BB;</a>
-</section>
+</section> -->
 
 <!-- content -->
 <div class="content">
@@ -73,7 +73,7 @@ get_header('home'); ?>
 									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Print Design">&#x1F4D6;</i>';
 									echo $categoryicon;
 								}
-								if(has_category("Game Art")) {
+								if(has_category("Game Art & Design")) {
 									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Game Art">&#x1F3AE;</i>';
 									echo $categoryicon;
 								}

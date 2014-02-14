@@ -966,24 +966,38 @@ body > section.carousel article.catt figcaption:after {
 	margin-top: -15px;
 }
 
-div.content {max-width:1500px; margin:0 auto;}
-div.content > section.three-fourths {background-color:#fff;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-	border: 1px solid #ececec; border-width: 0 1px; padding:95px 5% 65px; background-image:url('img/pattern.png'), url('img/pattern.png'); background-position:center top, center bottom; background-repeat:no-repeat;}
-div.content > section.three-fourths.about {padding:95px 5% 65px;}
-div.content > section.three-fourths > hgroup {padding-bottom:35px; border-bottom:1px dotted #facad5;}
-.page-template-page-about-php div.content > section.three-fourths > hgroup, .page-template-page-sales-php div.content > section.three-fourths > hgroup {margin-bottom:35px;}
-div.content > section.three-fourths > hgroup h1 {font-family:'Quicksand', Arial, Sans-serif; font-size:2.5em; line-height:1.25em; font-weight:bold; text-shadow: -3px 3px 0 #FACAD5;}
-div.content > section.three-fourths > hgroup h2 {font-family:'Source Sans Pro', Arial, Sans-serif; font-weight:lighter; font-size:2em; margin-top:10px;}
-div.content > section.three-fourths > section {padding-top:35px;}
-div.content > section.three-fourths > section:last-child {margin-bottom:35px;}
-div.content > section.three-fourths section h2 {display:inline-block; margin-right:5px; font-size:24px; font-weight:bold; font-family:'Quicksand', Arial, Sans-serif; line-height:1em;}
-div.content > section.three-fourths a.seemore-link {font-size:10px; background:#EF4B6D; padding:0 3px; border-radius:3px; display:inline-block; color:#fff; margin-top:-3px;}
-div.content > section.three-fourths a.seemore-link:hover {background:#facad5; color:#000; opacity:1;}
-div.content > section.three-fourths section > header > span {display:inline-block; margin-left:10px; font-size:12px; border-bottom:1px dotted #ccc;}
+div.content {
+	max-width:1500px; margin:0 auto;
+	
+	> section.three-fourths {
+		background-color:#fff;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		border: 1px solid #ececec; border-width: 0 1px; padding:95px 5% 65px; background-image:url('img/pattern.png'), url('img/pattern.png'); background-position:center top, center bottom; background-repeat:no-repeat;
 
+		&.about {padding:95px 5% 65px;}
+		
+		> hgroup {padding-bottom:35px; border-bottom:1px dotted #facad5;
+			h1 {font-family:'Quicksand', Arial, Sans-serif; font-size:2.5em; line-height:1.25em; font-weight:bold; text-shadow: -3px 3px 0 #FACAD5;}
+			h2 {font-family:'Source Sans Pro', Arial, Sans-serif; font-weight:lighter; font-size:2em; margin-top:10px;}
+		}
+		
+		> section {padding-top:35px;
+			&:last-child {margin-bottom:35px;}
+			
+		  h2 {display:inline-block; font-size:24px; font-weight:bold; font-family:'Quicksand', Arial, Sans-serif; line-height:1em;
+			}
+		}
+		a.seemore-link {
+			font-size:12px; background:#EF4B6D; padding:0 5px; border-radius:3px; position:absolute;
+			color:#fff; margin:4px 0 0 10px;
+			&:hover {background:#facad5; color:#000; opacity:1;}
+		}
+		section > header > span {display:inline-block; margin-left:10px; font-size:12px; border-bottom:1px dotted #ccc;}
+	}
+}
+.page-template-page-about-php div.content > section.three-fourths > hgroup, .page-template-page-sales-php div.content > section.three-fourths > hgroup {margin-bottom:35px;}
 section.post-thumbnail {overflow:hidden; max-height:350px; border:1px solid #999; box-shadow:0 0 8px rgba(0,0,0,0.25); margin-bottom:.5em;}
 section.post-thumbnail img {width:100%;}
 
@@ -1329,14 +1343,14 @@ div.content > [role="sidebar"].one-fourth.right.fixed.scrolled {position:fixed;}
   .visible-tablet {
     display: inherit !important;
   }
-  .hidden-tablet {
-    display: none !important;
-  }
 }
 
 @media (max-width: 979px) {
-div.content > aside[role="sidebar"] section.skills > header {margin-bottom:15px; border:0;}
-div.content > aside[role="sidebar"] section.skills {padding:20px 20px 10px;}
+	div.content > aside[role="sidebar"] section.skills > header {margin-bottom:15px; border:0;}
+	div.content > aside[role="sidebar"] section.skills {padding:20px 20px 10px;}
+	.hidden-tablet {
+	  display: none;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
