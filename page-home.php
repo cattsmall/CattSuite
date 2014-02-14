@@ -73,8 +73,8 @@ get_header('home'); ?>
 									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Print Design">&#x1F4D6;</i>';
 									echo $categoryicon;
 								}
-								if(has_category("Game Art & Design")) {
-									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Game Art">&#x1F3AE;</i>';
+								if(has_category("Game Art &amp; Design")) {
+									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Game Art & Design">&#x1F3AE;</i>';
 									echo $categoryicon;
 								}
 								 ?> <a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>

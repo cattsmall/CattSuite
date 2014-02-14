@@ -978,12 +978,31 @@ div.content {
 
 		&.about {padding:95px 5% 65px;}
 		
-		> hgroup {padding-bottom:35px; border-bottom:1px dotted #facad5;
+		> hgroup {padding-bottom:35px;
 			h1 {font-family:'Quicksand', Arial, Sans-serif; font-size:2.5em; line-height:1.25em; font-weight:bold; text-shadow: -3px 3px 0 #FACAD5;}
 			h2 {font-family:'Source Sans Pro', Arial, Sans-serif; font-weight:lighter; font-size:2em; margin-top:10px;}
 		}
 		
-		> section {padding-top:35px;
+		> section {
+			padding-top:55px;
+			
+			&.portfolio {
+				border-top:1px dotted #facad5;
+				border-bottom:1px dotted #facad5;
+				padding-bottom:35px;
+			}
+			
+			&.blog {
+				> header {
+					margin-bottom:10px;
+				}
+				.post {
+					+ .post {
+						padding:30px 0 0;
+					}
+				}
+			}
+			
 			&:last-child {margin-bottom:35px;}
 			
 		  h2 {display:inline-block; font-size:24px; font-weight:bold; font-family:'Quicksand', Arial, Sans-serif; line-height:1em;
@@ -1003,35 +1022,40 @@ section.post-thumbnail img {width:100%;}
 
 .blog div.content > section.three-fourths > section, div.content > section.three-fourths.blog-page > section {padding-top:0;}
 	
-article.post {padding:10px 0;}
-article.post.excerpt {padding:30px 0; border-bottom:1px solid #ececec;}
-article.post.excerpt:first-child {padding-top:10px;}
-article.post.excerpt:last-child {padding-bottom:10px; border:0;}
-
-article.post .readmore-link {line-height: 1.5em; position:relative; display:inline-block; padding:3px 5px 3px 8px; background:rgba(239,75,109, .5); color:#fff; font-size:10px; margin:0 0 0 5px;}
-article.post .readmore-link:after {
-	left: 100%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(0, 0, 0, 0);
-	border-left-color: rgba(239,75,109, .5);
-	border-width: 10px;
-	top: 50%;
-	margin-top: -10px;
+article.post {padding:10px 0;
+	&.excerpt {padding:30px 0; border-bottom:1px solid #ececec;
+		&:first-child {padding-top:10px;}
+		&:last-child {padding-bottom:10px; border:0;}
+	}
+	.readmore-link {line-height: 1.5em; position:relative; display:inline-block; padding:3px 5px 3px 8px; background:rgba(239,75,109, .5); color:#fff; font-size:10px; margin:0 0 0 5px;
+		border-radius:3px 0 0 3px;
+		
+		&:after {
+			left: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(0, 0, 0, 0);
+			border-left-color: rgba(239,75,109, .5);
+			border-width: 10px;
+			top: 50%;
+			margin-top: -10px;
+		}
+	}
+	ul, ol:not(.commentlist) {padding:0 0 20px 30px;}
+	li:not(.comment) {margin-bottom:10px; font-style:italic; font-size:1.15em; text-shadow: -1px 1px 0 #FACAD5;}
+	&.half {width:48.5%; padding:10px 3% 10px 0;
+		&:nth-child(odd) {padding:10px 0;}
+	}
+	.tag a {font-size:14px; position:relative; background:rgba(239,75,109, .5); padding:0 15px 1px 8px; display:inline-block; color:#fff; margin-top:-3px; text-shadow:-1px 1px 0 #EF4B6D; box-shadow: 3px 3px 0 #EF4B6D;
+		&:hover {color:#666666; opacity:1; background:#EF4B6D; text-shadow:-1px 1px 0 #facad5; box-shadow: 3px 3px 0 #facad5;}
+	}
 }
-.single article.post {padding:10px 0 0;}
 article.post h1, article.page h1 {font-weight:bold;}
-article.post ul, article.post ol:not(.commentlist) {padding:0 0 20px 30px;}
-article.post li:not(.comment) {margin-bottom:10px; font-style:italic; font-size:1.15em; text-shadow: -1px 1px 0 #FACAD5;}
-article.post.half {width:48.5%; padding:10px 3% 10px 0;}
-article.post.half:nth-child(odd) {padding:10px 0;}
-article.post .tag a {font-size:14px; position:relative; background:rgba(239,75,109, .5); padding:0 15px 1px 8px; display:inline-block; color:#fff; margin-top:-3px; text-shadow:-1px 1px 0 #EF4B6D; box-shadow: 3px 3px 0 #EF4B6D;
-	&:hover {color:#666666; opacity:1; background:#EF4B6D; text-shadow:-1px 1px 0 #facad5; box-shadow: 3px 3px 0 #facad5;}
-}
+.single article.post {padding:10px 0 0;}
 
 /* blog */
 section.blog article.post section.meta, section.blog article.page section.meta {font-size:12px; font-weight:bold;}
