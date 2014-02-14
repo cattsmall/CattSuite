@@ -11,7 +11,7 @@ get_header('home'); ?>
 	<?php get_sidebar(); ?>
 	<section class="three-fourths">
 		<!-- blog -->
-		<section class="blog">
+		<!-- <section class="blog"> -->
 			<?php if ( is_home() ) {
 				query_posts( 'cat=-21' );
 				} 
@@ -29,7 +29,7 @@ get_header('home'); ?>
 			<?php else : ?>
 				<p>There are no blog posts.</p>
 			<?php endif; ?>
-		</section>
+		<!-- </section> -->
 	</section>
 	<div class="clearfix"></div>
 </div>

@@ -9,7 +9,7 @@ get_header(); ?>
 	<!-- portfolio work & blog -->
 	<?php get_sidebar(); ?>
 	<section class="three-fourths blog-page">
-		<section class="blog">
+		<!-- <section class="blog"> -->
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article  <?php post_class(); ?>>
 					<header><h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1></header>
@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php else : ?>
 				<p>There are no blog posts.</p>
 			<?php endif; ?>
-		</section>
+		<!-- </section> -->
 	</section>
 	<div class="clearfix"></div>
 </div>
