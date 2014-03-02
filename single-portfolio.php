@@ -48,4 +48,4 @@ get_header('single'); ?>
 	<div class="clearfix"></div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer('portfolio-inner'); ?>

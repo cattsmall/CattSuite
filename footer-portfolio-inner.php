@@ -36,6 +36,8 @@
 		  		e.preventDefault();
 		  	});
 		$('.post.carousel .item:first-child').addClass("active");
+      
+      $('.current_page_parent + li').addClass("current-menu-item");
 
 		$('section.skills header button.btn').click(function(){
 			$('section.skills > article').slideToggle();
