@@ -1,0 +1,263 @@
+/* MEDIA QUERIES */
+/* slides & imgs */
+@media (min-width: 1281px) and (max-width:1440px) {
+	section.post-thumbnail {max-height:300px;}
+}
+
+@media (min-width: 1025px) and (max-width:1280px) {
+	section.post-thumbnail {max-height:250px;}
+}
+
+@media (min-width: 1025px) {
+	body > section.carousel .item:nth-child(1) {background-image:url('img/slides/1-high1500x500/sketch-tut.jpg');}
+	body > section.carousel .item:nth-child(2) {background-image:url('img/slides/1-high1500x500/tut.jpg');}
+	body > section.carousel .item:nth-child(3) {background-image:url('img/slides/1-high1500x500/fetchr.jpg');}
+	body > section.carousel .item:nth-child(4) {background-image:url('img/slides/1-high1500x500/gauge.jpg');}
+	body > section.carousel .item:nth-child(5) {background-image:url('img/slides/1-high1500x500/algame.jpg');}
+	body > section.carousel .item:nth-child(6) {background-image:url('img/slides/1-high1500x500/edu-wires.jpg');}
+	body > section.carousel .item:nth-child(7) {background-image:url('img/slides/1-high1500x500/vggp.jpg');}
+}
+
+@media (min-width: 961px) and (max-width:1024px) {
+	body > section.carousel .item:nth-child(1) {background-image:url('img/slides/2-med1024x500/sketch-tut.jpg');}
+	body > section.carousel .item:nth-child(2) {background-image:url('img/slides/2-med1024x500/tut.jpg');}
+	body > section.carousel .item:nth-child(3) {background-image:url('img/slides/2-med1024x500/fetchr.jpg');}
+	body > section.carousel .item:nth-child(4) {background-image:url('img/slides/2-med1024x500/gauge.jpg');}
+	body > section.carousel .item:nth-child(5) {background-image:url('img/slides/2-med1024x500/algame.jpg');}
+	body > section.carousel .item:nth-child(6) {background-image:url('img/slides/2-med1024x500/edu-wires.jpg');}
+	body > section.carousel .item:nth-child(7) {background-image:url('img/slides/2-med1024x500/vggp.jpg');}
+	section.post-thumbnail {max-height:220px;}
+}
+
+@media (min-width: 641px) and (max-width:960px) {
+	body > section.carousel .item:nth-child(1) {background-image:url('img/slides/3-low960x375/sketch-tut.jpg');}
+	body > section.carousel .item:nth-child(2) {background-image:url('img/slides/3-low960x375/tut.jpg');}
+	body > section.carousel .item:nth-child(3) {background-image:url('img/slides/3-low960x375/fetchr.jpg');}
+	body > section.carousel .item:nth-child(4) {background-image:url('img/slides/3-low960x375/gauge.jpg');}
+	body > section.carousel .item:nth-child(5) {background-image:url('img/slides/3-low960x375/algame.jpg');}
+	body > section.carousel .item:nth-child(6) {background-image:url('img/slides/3-low960x375/edu-wires.jpg');}
+	body > section.carousel .item:nth-child(7) {background-image:url('img/slides/3-low960x375/vggp.jpg');}
+	section.post-thumbnail {max-height:200px;}
+}
+
+@media (max-width: 640px) {
+	body > section.carousel .item:nth-child(1) {background-image:url('img/slides/4-tiny640x300/sketch-tut.jpg');}
+	body > section.carousel .item:nth-child(2) {background-image:url('img/slides/4-tiny640x300/tut.jpg');}
+	body > section.carousel .item:nth-child(3) {background-image:url('img/slides/4-tiny640x300/fetchr.jpg');}
+	body > section.carousel .item:nth-child(4) {background-image:url('img/slides/4-tiny640x300/gauge.jpg');}
+	body > section.carousel .item:nth-child(5) {background-image:url('img/slides/4-tiny640x300/algame.jpg');}
+	body > section.carousel .item:nth-child(6) {background-image:url('img/slides/4-tiny640x300/edu-wires.jpg');}
+	body > section.carousel .item:nth-child(7) {background-image:url('img/slides/4-tiny640x300/vggp.jpg');}
+}
+
+/* everything else */
+@media (min-width: 1500px) {
+	div.content > [role="sidebar"].one-fourth.right.fixed {right:auto;}
+	div.content > [role="sidebar"].one-fourth.right.fixed.scrolled {right:auto; margin-left:1125px;}
+}
+
+@media (min-width: 960px) {
+  .hidden-tablet-horiz {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+	body > section.carousel article.catt .body {margin-left:-75px; left:45%;}
+	body > section.carousel article.catt figcaption {margin-left:15%; left:45%;}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+	span.hidden-desktop {
+    display: inline !important;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .visible-tablet {
+    display: inherit !important;
+  }
+}
+
+@media (max-width: 979px) {
+	div.content > aside[role="sidebar"] section.skills > header {margin-bottom:15px; border:0;}
+	div.content > aside[role="sidebar"] section.skills {padding:20px 20px 10px;}
+	.hidden-tablet {
+	  display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+	div.content > aside[role="sidebar"] section.skills article ul li {width:41%; padding:5px 2.5% 12px; float:left; margin-right:2%;}
+	body > section.carousel .item {height:375px; /*background-size:150%;*/}
+	body > header[role="banner"] > nav ul li a {padding:8px 10px;}
+}
+
+@media (max-width: 960px) {
+	div.content > *[role="sidebar"].one-fifth, div.content > *[role="sidebar"].one-twentieth {
+    width:100%;
+    max-width:100%;
+    
+    &.portfolio-inner {
+      border-bottom:0;
+      z-index: 2;
+  
+      a {
+        text-align:center;
+        border-bottom:1px solid fade(@black,25%);
+    
+        &:after {
+          content:"Back to full portfolio";
+          margin: 3px 0 0 10px;
+          vertical-align: top;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  
+  .nineteen-twentieths, .four-fifths {
+    width:100%;
+  }
+  
+	div.content > section.three-fourths, div.content > section.three-fourths.auto-margin {width:100%; padding:95px 5% 65px;}
+	
+	div.content > *[role="sidebar"] {box-shadow:0 0 8px rgba(0,0,0,.5); border-bottom:1px solid #999; position:relative; z-index:2;}
+	div.content > aside[role="sidebar"] section.skills article {width:48%; float:left; padding-right:2%;}
+	div.content > aside[role="sidebar"] section.skills article header {width:85%; padding:5px 0 5px 2.5%;}
+
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li {margin-top:10px;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li > a {display:inline-block; margin-right:5px; width:auto; display:inline-block; padding:5px 10px; border-radius:3px;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li > a:after, div.content > section[role="sidebar"] > aside > ul > li.current-menu-item > a:after {display:none;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li {margin-top:5px;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li {display:inline-block;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li a {display:inline-block; margin-right:5px; padding:5px 10px; border-radius:3px; border:0; background:#facad5;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li.current-menu-item a {background:#999; color:#fff;}
+	
+  div.content.portfolio-page > aside[role="sidebar"] .scroll-links {
+    ul li {
+      width:50%;
+      float:left;
+      list-style:none;
+      
+      a {
+        padding:12px 15px 8px;
+      }
+      
+      &:first-child {
+        display:none;
+      }
+      
+      &:nth-child(odd) a {
+        border-left:1px solid rgba(239,75,109,0.5);
+      }
+      
+      &.active a {
+        background:rgba(239,75,109,0.5);
+      }
+    }
+  }
+  
+	div.content > aside[role="sidebar"] .scroll-links ul li
+	div.content > aside[role="sidebar"] .scroll-links ul li
+	div.content > aside[role="sidebar"] .scroll-links ul li a:after, div.content > aside[role="sidebar"] .scroll-links ul li.active a:after {display:none;}
+	div.content > aside[role="sidebar"] .scroll-links ul li
+  
+  div.content.portfolio-page > section {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .blurb {display:none;}
+  .fixed {position:relative;}
+  .fixed.right {right:auto;}
+  div.content > [role="sidebar"].one-fourth.right.fixed.scrolled {position:relative;}
+}
+
+@media (max-width: 767px) {
+	body > header[role="banner"] > nav ul li a {padding:8px 10px;}
+
+	body > section.carousel article.catt .body {display:none;}
+ 	body > section.carousel article.catt figcaption {opacity:1; background:#333; left:0; margin-left:0; width:94%; bottom:0; border-radius:0;}
+
+.hidden-desktop {
+    display: inherit !important;
+  }
+	span.hidden-desktop {
+    display: inline !important;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .btn.visible-phone {
+    display: inline-block !important;
+  }
+  .hidden-phone {
+    display: none;
+  }
+
+body > section.carousel .item {height:320px; background-size:150%;}
+div.content > section.three-fourths section > header > span {display:block; margin:5px 0 0; font-weight:bold; border:0;}
+body > footer > .half {width:96%; padding:18px 2% 15px;}
+}
+
+@media (max-width: 640px) {
+	body > header[role="banner"] > nav div.title {
+    width:100%;
+    text-align:center;
+    float:none;
+  }
+	body > header[role="banner"] > nav {
+	  .nav-menu.right {
+  	  float:none;
+      width: 100%;
+      text-align: center;
+      display:inline-block;
+   	}
+	}
+  
+	body > header[role="banner"] > nav ul li {
+    margin-top:10px;
+    display: inline-block;
+    float: none;
+  }
+  
+	body > header[role="banner"] > nav a.contact.btn {display:none;}
+	body > header[role="banner"] > nav div.title a {line-height:1em;}
+	
+	body > section.carousel .item {height:250px; /*background-size:150%;*/}
+	
+	.half, .one-fourth, .three-fourths, .one-third, .two-thirds, .one-twentieth, .nine-twentieths {width:100%;}
+	article.post.half {width:100%; padding:10px 0;}
+	div.content > aside[role="sidebar"] section.skills article {width:100%; padding-right:0%;}
+ 	div.content > aside[role="sidebar"] section.skills article ul li {width:43%; padding:5px 2.5% 12px; float:left; margin-right:2%;}
+	article.post .two-thirds > div {padding:5px 0 0; margin:10px 0 0; border-top:1px dotted #ccc; border-left:0;}
+	article.post.portfolio section.carousel .item {height:250px;}
+}
+
+@media (max-width: 500px) {
+	body > section.carousel .item {height:200px; /*background-size:150%;*/}
+	article.post.portfolio section.carousel .item {height:220px;}
+	div.content > section.three-fourths > hgroup h1 {font-size:2em;}
+	div.content > section.three-fourths > hgroup h2 {font-size:1.5em; font-weight:normal;}
+}
+
+@media (max-width: 400px) {
+	div.content > section.three-fourths > hgroup h1 {font-size:1.75em;}
+  
+	div.content > aside[role="sidebar"] .scroll-links {
+    .ss-icon {
+      display:none;
+    }
+  }
+}
+
+@media print {
+
+}

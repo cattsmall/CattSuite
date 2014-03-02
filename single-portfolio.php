@@ -7,10 +7,10 @@ Description: This part is optional, but helpful for describing the Post Template
 get_header('single'); ?>
 
 <!-- content -->
-<div class="content">
+<div class="content portfolio-page portfolio-single">
 	<!-- portfolio work & blog -->
 	<?php include(TEMPLATEPATH."/sidebar-2.php");?>
-	<section class="three-fourths right">
+	<section class="nineteen-twentieths">
 		<section class="blog">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?>>
