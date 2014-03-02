@@ -137,34 +137,53 @@
 	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li a {display:inline-block; margin-right:5px; padding:5px 10px; border-radius:3px; border:0; background:#facad5;}
 	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li.current-menu-item a {background:#999; color:#fff;}
 	
-  div.content.portfolio-page > aside[role="sidebar"] .scroll-links {
-    ul li {
-      width:50%;
-      float:left;
-      list-style:none;
+  div.content.portfolio-page > aside[role="sidebar"] {
+    .scroll-links {
+      ul li {
+        width:50%;
+        float:left;
+        list-style:none;
       
-      a {
-        padding:12px 15px 8px;
+        a {
+          padding:12px 15px 8px;
+        }
+      
+        &:first-child {
+          display:none;
+        }
+      
+        &:nth-child(odd) a {
+          border-left:1px solid rgba(239,75,109,0.5);
+        }
+      
+        &.active a {
+          background:rgba(239,75,109,0.5);
+        }
       }
-      
-      &:first-child {
-        display:none;
-      }
-      
-      &:nth-child(odd) a {
-        border-left:1px solid rgba(239,75,109,0.5);
-      }
-      
-      &.active a {
-        background:rgba(239,75,109,0.5);
+    }
+    
+    &.scrolled {
+      .scroll-links {
+        ul li {
+          &:first-child {
+            display:block;
+            text-align:center;
+            position:fixed;
+            bottom:0;
+            right:0;
+            width:100px;
+            
+            a {
+              border:0;
+              background:rgba(239,75,109,0.75);
+            }
+          }
+        }
       }
     }
   }
   
-	div.content > aside[role="sidebar"] .scroll-links ul li
-	div.content > aside[role="sidebar"] .scroll-links ul li
 	div.content > aside[role="sidebar"] .scroll-links ul li a:after, div.content > aside[role="sidebar"] .scroll-links ul li.active a:after {display:none;}
-	div.content > aside[role="sidebar"] .scroll-links ul li
   
   div.content.portfolio-page > section {
     z-index: 1;
