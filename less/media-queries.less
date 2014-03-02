@@ -274,9 +274,23 @@
 @media (max-width: 400px) {
 	div.content > section.three-fourths > hgroup h1 {font-size:1.75em;}
   
-	div.content > aside[role="sidebar"] .scroll-links {
-    .ss-icon {
-      display:none;
+	div.content > aside[role="sidebar"] {
+    .scroll-links {
+      .ss-icon {
+        display:none;
+      }
+    }
+    
+    &.scrolled {
+      .scroll-links {
+        ul li {
+          &:first-child {
+            .ss-icon {
+              display:inline-block;
+            }
+          }
+        }
+      }
     }
   }
 }
