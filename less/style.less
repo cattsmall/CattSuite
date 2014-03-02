@@ -1157,8 +1157,17 @@ div.content.portfolio-page {
 	
 	*[role="sidebar"] {
 		max-width:281px;
-		
-	 .scroll-links {
+
+  
+    &:nth-child(odd) a {
+      border-left:1px solid rgba(239,75,109,0.5);
+    }
+  
+    &.active a {
+      background:rgba(239,75,109,0.5);
+    }
+				
+		.scroll-links {
 			font-family:'Quicksand', Arial, Sans-serif;
 		
 			header {
@@ -1207,6 +1216,20 @@ div.content.portfolio-page {
 								border-color:transparent transparent transparent #666 ;
 							top: 0;
 						}
+					}
+					
+			    &:first-child {
+			      display:none;
+			    }
+				}
+			}
+		}
+		
+		&.scrolled {
+		  .scroll-links {
+		    ul li {
+		      &:first-child {
+		        display:block;
 					}
 				}
 			}
