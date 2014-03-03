@@ -63,10 +63,10 @@ $(document).ready(function() {
 		context.strokeRect(2, 2, canvasWidth - 4, canvasHeight - 4);
     
     // Giant 404
-    context.font = "100px Source Sans Pro";
+    context.font = "140px Source Sans Pro";
     context.textAlign = 'center';
     context.fillStyle = '#EF4B6D';
-    context.fillText("404", canvasWidth/2, 200);
+    context.fillText("404", canvasWidth/2, 180);
 
     // Sorry Text
     context.font = "24px Source Sans Pro";
@@ -76,7 +76,18 @@ $(document).ready(function() {
     // Game Hint Text
     context.font = "14px Source Sans Pro";
     context.fillStyle = '#666666';
-    context.fillText("Why not play a little game in the meantime? Click here to begin.", canvasWidth/2, 290);
+    context.fillText("Why not play a little game in the meantime?", canvasWidth/2, 290);
+    
+    // Game hint BG
+		context.beginPath(); // rectangle
+    context.fillStyle = '#FACAD5';
+		context.fillRect(canvasWidth/3 + 40, 350, canvasWidth/3 - 80, 40);
+    
+    // Game Hint Text
+    context.font = "14px Source Sans Pro";
+    context.fillStyle = '#EF4B6D';
+    context.textAlign = 'center';
+    context.fillText("Play now", canvasWidth/2, 375);
 	}
   
   
@@ -85,13 +96,13 @@ $(document).ready(function() {
     // Game hint BG
 		context.beginPath(); // rectangle
     context.fillStyle = '#666666';
-		context.fillRect(canvasWidth/3 - 20, 0, canvasWidth/3 + 40, 40);
+		context.fillRect(0, 0, canvasWidth, 40);
     
     // Game Hint Text
     context.font = "14px Source Sans Pro";
     context.fillStyle = '#CCCCCC';
     context.textAlign = 'center';
-    context.fillText("Draw something using your keyboard!", canvasWidth/2, 25);
+    context.fillText("Draw something using your keyboard arrows!", canvasWidth/2, 25);
     
     // Rectangle
 		context.beginPath(); // rectangle
@@ -104,7 +115,7 @@ $(document).ready(function() {
 	function update() {
     
     // keyboard inputs
-    if ( 38 in keysDown && player.y > (player.size) ) {
+    if ( 38 in keysDown && player.y > (player.size + 40 ) ) {
       player.y = player.y - player.speed;
     }
 

@@ -12,7 +12,7 @@
 	<div class="clearfix"></div>
 </footer><script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min-ck.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min-ck.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/404-canvas.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/404-canvas-ck.js"></script>
 	<script>
 		$("[rel=tooltip]").tooltip();
 
