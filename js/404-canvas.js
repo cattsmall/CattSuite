@@ -228,63 +228,89 @@ $(document).ready(function() {
     }
 	}
   
-  // Button inputs
-  $(".canvas-controls .button-up").mousedown(function() {
-    moveUp = setInterval( function() {
-      if ( player.y > (player.size + 40) ) {
-        player.y = player.y - player.speed;
-      }
-      
-      else {
-        clearInterval(moveUp);
-      }
-    } , 30);
-    }).mouseup(function() {
-    clearInterval(moveUp);
+  // Button inputs - mousedown
+  // $(".canvas-controls .button-up").mousedown(function() {
+  //   moveUp = setInterval( function() {
+  //     if ( player.y > (player.size + 40) ) {
+  //       player.y = player.y - player.speed;
+  //     }
+  //     
+  //     else {
+  //       clearInterval(moveUp);
+  //     }
+  //   } , 30);
+  //   }).mouseup(function() {
+  //   clearInterval(moveUp);
+  // });
+  // 
+  // $(".canvas-controls .button-down").mousedown(function() {
+  //   moveDown = setInterval( function() {
+  //     if ( player.y < (canvasHeight - player.size) ) {
+  //       player.y = player.y + player.speed;
+  //     }
+  //     
+  //     else {
+  //       clearInterval(moveDown);
+  //     }
+  //   } , 30);
+  //   }).mouseup(function() {
+  //   clearInterval(moveDown);
+  // });
+  // 
+  // $(".canvas-controls .button-left").mousedown(function() {
+  //   moveLeft = setInterval( function() {
+  //     if ( player.x > (player.size) ) {
+  //       player.x = player.x - player.speed;
+  //     }
+  //     
+  //     else {
+  //       clearInterval(moveLeft);
+  //     }
+  //   } , 30);
+  //   }).mouseup(function() {
+  //   clearInterval(moveLeft);
+  // });
+  // 
+  // $(".canvas-controls .button-right").mousedown(function() {
+  //   moveRight = setInterval( function() {
+  //     if ( player.x < (canvasWidth - player.size) ) {
+  //       player.x = player.x + player.speed;
+  //     }
+  //     
+  //     else {
+  //       clearInterval(moveRight);
+  //     }
+  //   } , 30);
+  //   }).mouseup(function() {
+  //   clearInterval(moveRight);
+  // });
+
+  // Button inputs - click
+  $(".canvas-controls .button-up").on("click", function() {
+    if ( player.y > (player.size + 40) ) {
+      player.y = player.y - player.speed * 2;
+    }
   });
   
-  $(".canvas-controls .button-down").mousedown(function() {
-    moveDown = setInterval( function() {
-      if ( player.y < (canvasHeight - player.size) ) {
-        player.y = player.y + player.speed;
-      }
-      
-      else {
-        clearInterval(moveDown);
-      }
-    } , 30);
-    }).mouseup(function() {
-    clearInterval(moveDown);
+  $(".canvas-controls .button-down").on("click", function() {
+    if ( player.y < (canvasHeight - player.size) ) {
+      player.y = player.y + player.speed * 2;
+    }
   });
   
-  $(".canvas-controls .button-left").mousedown(function() {
-    moveLeft = setInterval( function() {
-      if ( player.x > (player.size) ) {
-        player.x = player.x - player.speed;
-      }
-      
-      else {
-        clearInterval(moveLeft);
-      }
-    } , 30);
-    }).mouseup(function() {
-    clearInterval(moveLeft);
+  $(".canvas-controls .button-left").on("click", function() {
+    if ( player.x > (player.size) ) {
+      player.x = player.x - player.speed * 2;
+    }
   });
   
-  $(".canvas-controls .button-right").mousedown(function() {
-    moveRight = setInterval( function() {
-      if ( player.x < (canvasWidth - player.size) ) {
-        player.x = player.x + player.speed;
-      }
-      
-      else {
-        clearInterval(moveRight);
-      }
-    } , 30);
-    }).mouseup(function() {
-    clearInterval(moveRight);
+  $(".canvas-controls .button-right").on("click", function() {
+    if ( player.x < (canvasWidth - player.size) ) {
+      player.x = player.x + player.speed;
+    }
   });
   
+  // Start game
   canvas.on("click", function() {
     if ( !gameStarted ) {
       gameStarted = true;

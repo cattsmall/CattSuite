@@ -32,7 +32,7 @@ get_header(); ?>
 				</canvas>
          
             <!--[if !IE]> -->
-            <section class="canvas-controls visible-tablet visible-phone">
+            <section class="canvas-controls hidden-desktop">
                <p>On a phone or tablet? Use these controls.</p>
                <ul>
                   <li>
