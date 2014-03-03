@@ -9,7 +9,7 @@
 			<article class="hidden-tablet">
 				<header><h3>Digital</h3></header>
 				<ul>
-					<li rel="tooltip" title="I've designed websites of all kinds including web apps and ecommerce sites. I enjoy designing interactions and user experiences." data-placement="top">
+					<li rel="tooltip" title="I've designed websites of all kinds including web apps and ecommerce sites. I enjoy designing and improving user experiences." data-placement="top">
 						<h4>Web &amp; Blog Design</h4>
 						<div class="progress">
 						  <div class="bar" style="width: 100%;"></div>
@@ -18,13 +18,13 @@
 					<li rel="tooltip" title="Media queries and percentages are my best friends! I love adapting designs for all screen sizes and think mobile first." data-placement="top">
 						<h4>Responsive Design</h4>
 						<div class="progress">
-						  <div class="bar" style="width: 80%;"></div>
+						  <div class="bar" style="width: 90%;"></div>
 						</div>
 					</li>
 					<li rel="tooltip" title="I can't code for iOS or Android, but I design beautiful interfaces and code in HTML5." data-placement="top">
 						<h4>App Design</h4>
 						<div class="progress">
-						  <div class="bar" style="width: 70%;"></div>
+						  <div class="bar" style="width: 80%;"></div>
 						</div>
 					</li>
 					<li rel="tooltip" title="I love coding and staying up-to-date with the latest versions of HTML &amp; CSS3." data-placement="top">
@@ -33,16 +33,16 @@
 						  <div class="bar" style="width: 95%;"></div>
 						</div>
 					</li>
-					<li rel="tooltip" title="I'm not a JavaScript master, but I know my way around it. I work in jQuery a lot." data-placement="top">
-						<h4>JavaScript &amp; jQuery</h4>
+					<li rel="tooltip" title="I have heavy amounts of experience with JavaScript and various frameworks, including jQuery and AngularJS." data-placement="top">
+						<h4>JavaScript</h4>
 						<div class="progress">
-						  <div class="bar" style="width: 70%;"></div>
+						  <div class="bar" style="width: 90%;"></div>
 						</div>
 					</li>
 					<li rel="tooltip" title="I use PHP with Wordpress quite often, and I've built my own MySQL database!" data-placement="top">
 						<h4>PHP &amp; MySQL</h4>
 						<div class="progress">
-						  <div class="bar" style="width: 60%;"></div>
+						  <div class="bar" style="width: 70%;"></div>
 						</div>
 					</li>
 					<li rel="tooltip" title="I'm still in the process of learning..." data-placement="top">
