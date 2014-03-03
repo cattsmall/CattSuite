@@ -49,8 +49,8 @@
       
       $(window).resize( function() {
          if ( $(document).width() >= 960 ) {
-   			$('section.skills > article').show();
-   			$('section.blog-sidebar .menu-categories-container').show();
+   			$('section.skills > article').attr("style","");
+   			$('section.blog-sidebar .menu-categories-container').attr("style","");
          }
       });
 	</script>

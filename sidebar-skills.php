@@ -10,7 +10,7 @@
 				<header><h3>Digital</h3></header>
 				<ul>
 					<li rel="tooltip" title="I've designed websites of all kinds including web apps and ecommerce sites. I enjoy designing and improving user experiences." data-placement="top">
-						<h4>Web &amp; Blog Design</h4>
+						<h4>Web &amp; UX Design</h4>
 						<div class="progress">
 						  <div class="bar" style="width: 100%;"></div>
 						</div>
