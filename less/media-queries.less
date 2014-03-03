@@ -184,6 +184,13 @@
     position: relative;
   }
   
+  
+	.blog-sidebar {
+		.menu-categories-container {
+			display:none;
+		}
+  }
+  
   .blurb {display:none;}
   .fixed {position:relative;}
   .fixed.right {right:auto;}
@@ -202,23 +209,23 @@
  	body > section.carousel article.catt figcaption {opacity:1; background:#333; left:0; margin-left:0; width:94%; bottom:0; border-radius:0;}
 
   .hidden-desktop {
-      display: inherit !important;
-    }
-  	span.hidden-desktop {
-      display: inline !important;
-    }
-    .visible-desktop {
-      display: none;
-    }
-    .visible-phone {
-      display: inherit !important;
-    }
-    .btn.visible-phone {
-      display: inline-block !important;
-    }
-    .hidden-phone {
-      display: none;
-    }
+    display: inherit !important;
+  }
+	span.hidden-desktop {
+    display: inline !important;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .btn.visible-phone {
+    display: inline-block !important;
+  }
+  .hidden-phone {
+    display: none;
+  }
 
   body > section.carousel .item {height:320px; background-size:150%;}
   div.content > section.three-fourths section > header > span {display:block; margin:5px 0 0; font-weight:bold; border:0;}
@@ -256,6 +263,10 @@
  	div.content > aside[role="sidebar"] section.skills article ul li {width:43%; padding:5px 2.5% 12px; float:left; margin-right:2%;}
 	article.post .two-thirds > div {padding:5px 0 0; margin:10px 0 0; border-top:1px dotted #ccc; border-left:0;}
 	article.post.portfolio section.carousel .item {height:250px;}
+  
+  #game-404-canvas {
+    height:400px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -263,6 +274,10 @@
 	article.post.portfolio section.carousel .item {height:220px;}
 	div.content > section.three-fourths > hgroup h1 {font-size:2em;}
 	div.content > section.three-fourths > hgroup h2 {font-size:1.5em; font-weight:normal;}
+  
+  #game-404-canvas {
+    height:300px;
+  }
 }
 
 @media (max-width: 400px) {

@@ -8,7 +8,6 @@ get_header(); ?>
 
 <!-- content -->
 <div class="content">
-	<!-- portfolio work & blog -->
 	<?php get_sidebar(); ?>
 	<section class="three-fourths blog-page">
 		
@@ -31,6 +30,27 @@ get_header(); ?>
 
 					<p><a href="http://cattsmall.com/about/#wpcf7-f872-p2-o1">Send me an email</a> and tell me what you did.</p>
 				</canvas>
+         
+            <!--[if !IE]> -->
+            <section class="canvas-controls visible-tablet visible-phone">
+               <p>On a phone or tablet? Use these controls.</p>
+               <ul>
+                  <li>
+                     <button class="button-up"><i class="ss-icon ss-standard">&#x25B4;</i></button>
+                  </li>
+                  <li>
+                     <button class="button-left"><i class="ss-icon ss-standard">&#x25C3;</i></button>
+                  </li>
+                  <li>
+                     <button class="button-down"><i class="ss-icon ss-standard">&#x25BE;</i></button>
+                  </li>
+                  <li>
+                     <button class="button-right"><i class="ss-icon ss-standard">&#x25B9;</i></button>
+                  </li>
+               </ul>
+            </section>
+            <!-- <![endif]-->
+            
 			</article>
 		<?php endif; ?>
 	</section>

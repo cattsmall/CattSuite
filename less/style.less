@@ -1242,7 +1242,21 @@ div.content > *[role="sidebar"].scrolled {top:0; z-index:4;}
 div.content > *[role="sidebar"].right.scrolled {top:0; z-index:4;}
 
 /* blog */
-div.content > section[role="sidebar"] > aside {padding:20px;}
+div.content > section[role="sidebar"] {
+	> aside {
+		padding:20px;
+	}
+	
+	&.blog-sidebar {
+		h3 {
+			margin-bottom:0;
+		}
+		
+		.btn.absolute {
+			top: 90px;
+		}
+	}
+}
 div.content > section[role="sidebar"] > aside.widget_search {/*border-bottom:1px dotted #999;*/ background:#ececec;}
 div.content > section[role="sidebar"] > aside h3 {font-family:'Quicksand', Arial, Sans-serif; font-weight:bold; font-size:18px; margin-bottom:8px;}
 div.content > section[role="sidebar"] > aside > .menu-categories-container > ul {padding:0; list-style:none;}
@@ -1359,13 +1373,6 @@ form.wpcf7-form .wpcf7-not-valid-tip-no-ajax {color:#EF4B6D;}
 form.wpcf7-form .wpcf7-mail-sent-ok {position:relative; background:#ebebeb; padding:10px 15px; margin:15px 0 0; border-radius:5px; border-bottom:1px solid #ccc;}
 .modal form.wpcf7-form {margin:0; padding:0;}
 span.required {color:#EF4B6D;}
-
-/* canvas */
-canvas {
-	display:block;
-	margin-bottom: 30px;
-}
-#game-404-canvas {width:100%; height:500px;}
 
 /* layouts */
 

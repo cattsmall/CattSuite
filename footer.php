@@ -39,7 +39,18 @@
 
 		$('section.skills header button.btn').click(function(){
 			$('section.skills > article').slideToggle();
-		})
+		});
+      
+		$('section.blog-sidebar button.btn').click(function(){
+			$('section.blog-sidebar .menu-categories-container').slideToggle();
+		});
+      
+      $(window).resize( function() {
+         if ( $(document).width() >= 960 ) {
+   			$('section.skills > article').show();
+   			$('section.blog-sidebar .menu-categories-container').show();
+         }
+      });
 	</script>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
