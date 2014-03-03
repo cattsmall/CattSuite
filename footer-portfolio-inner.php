@@ -2,7 +2,7 @@
 <!-- footer -->
 <footer>
 	<section class="half">
-		<nav><p>Stalk me on: <a href="http://twitter.com/cattsmall">twitter</a>, <a href="http://www.linkedin.com/in/cattsmall/">linkedin</a>, <a href="http://letter-q.tumblr.com">tumblr</a>.</p></nav>
+		<nav><p>Stalk me on: <a href="http://github.com/cattsmall">GitHub</a>, <a href="http://twitter.com/cattsmall">Twitter</a>, <a href="http://www.linkedin.com/in/cattsmall/">LinkedIn</a>, <a href="http://letter-q.tumblr.com">Tumblr</a>.</p></nav>
 	</section>
 	<section class="half">
 		<nav><p>Website design &amp; portfolio work © <script type="text/javascript"> var date = new Date();
