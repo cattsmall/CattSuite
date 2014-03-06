@@ -17,7 +17,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body data-spy="scroll" <?php body_class(); ?>>
+<body data-spy="scroll" data-target="#scroll-links" <?php body_class(); ?>>
 <?php include_once("analyticstracking.php") ?>
 <!-- header -->
 <header id="top" role="banner">

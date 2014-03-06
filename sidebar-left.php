@@ -1,6 +1,6 @@
 <!-- sidebar -->
 <aside role="sidebar" class="one-fifth left fixed">	
-	<nav class="scroll-links">
+	<nav class="scroll-links" id="scroll-links">
       <!-- <header><h4>Jump to a Section</h4></header> -->
 		<ul class="nav">
 			<li>

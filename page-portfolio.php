@@ -157,4 +157,4 @@ get_header('portfolio'); ?>
 	<div class="clearfix"></div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer('portfolio'); ?>
