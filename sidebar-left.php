@@ -1,5 +1,5 @@
 <!-- sidebar -->
-<aside role="sidebar" class="one-fifth left fixed">	
+<aside role="sidebar" class="one-tenth left fixed">	
 	<nav class="scroll-links" id="scroll-links">
       <!-- <header><h4>Jump to a Section</h4></header> -->
 		<ul class="nav">
@@ -10,26 +10,25 @@
          </li>
 			<li>
             <a href="#web">
-               <i class="ss-icon ss-standard">&#x1F30E;</i> Web Design
+               <i class="ss-icon ss-standard">&#x1F30E;</i> Web
             </a>
          </li>
 			<li>
             <a href="#mobile">
-               <i class="ss-icon ss-standard">&#x1F4F1;</i> Mobile Design
+               <i class="ss-icon ss-standard">&#x1F4F1;</i> Mobile
             </a>
          </li>
 			<li>
             <a href="#print">
-               <i class="ss-icon ss-symbolicons-block">&#x1F4D6;</i> Print Design
+               <i class="ss-icon ss-symbolicons-block">&#x1F4D6;</i> Print
             </a>
          </li>
 			<li>
             <a href="#game">
-               <i class="ss-icon ss-symbolicons-block">&#x1F3AE;</i> Game Art &amp; Design
+               <i class="ss-icon ss-symbolicons-block">&#x1F3AE;</i> Games
             </a>
          </li>
 		</ul>
 		<div class="clearfix"></div>
 	</nav>
-	<p class="blurb"><strong>Like what you see? <a href="http://cattsmall.com/about/#wpcf7-f872-p2-o1">Talk to me</a>!</strong></p>
 </aside>

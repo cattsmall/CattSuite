@@ -97,28 +97,33 @@
 }
 
 @media (max-width: 960px) {
-	div.content > *[role="sidebar"].one-fourth, div.content > *[role="sidebar"].one-fifth, div.content > *[role="sidebar"].one-twentieth {
-    width:100%;
-    max-width:100%;
+	div.content > *[role="sidebar"] {
+    &.one-fourth, &.one-fifth, &.one-twentieth, &.one-tenth {
+      width:100% !important;
+      max-width:100% !important;
     
-    &.portfolio-inner {
-      border-bottom:0;
-      z-index: 2;
+      &.portfolio-inner {
+        border-bottom:0;
+        z-index: 2;
   
-      a {
-        border-bottom:1px solid fade(@black,25%);
+        a {
+          border-bottom:1px solid fade(@black,25%);
     
-        &:after {
-          content:"Back to full portfolio";
-          margin: 3px 0 0 10px;
-          vertical-align: top;
-          display: inline-block;
+          &:after {
+            content:"Back to full portfolio";
+            margin: 3px 0 0 10px;
+            vertical-align: top;
+            display: inline-block;
+          }
         }
       }
     }
   }
+  .nineteen-twentieths, .four-fifths, .nine-tenths {
+    width:100%;
+  }
   
-  .nineteen-twentieths, .four-fifths {
+  div.content.portfolio-page .nine-tenths {
     width:100%;
   }
   
@@ -137,18 +142,24 @@
 	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li.current-menu-item a {background:#999; color:#fff;}
 	
   div.content.portfolio-page > aside[role="sidebar"] {
+    
     .scroll-links {
+      text-align:center;
+      
       ul li {
-        width:50%;
+        width:25%;
         float:left;
         list-style:none;
-      
+    
         a {
-          padding:12px 15px 8px;
+          border-left:1px dotted rgba(239,75,109,0.75);
+          padding:12px 10px 8px;
         }
       
-        &:nth-child(odd) a {
-          border-left:1px solid rgba(239,75,109,0.5);
+        &:nth-child(2) {
+          a {
+            border-left:0;
+          }
         }
       
         &.active a {
@@ -275,6 +286,21 @@
 	div.content > section.three-fourths > hgroup h1 {font-size:2em;}
 	div.content > section.three-fourths > hgroup h2 {font-size:1.5em; font-weight:normal;}
   
+  div.content.portfolio-page > aside[role="sidebar"] {
+    .scroll-links {
+      
+      .ss-icon {
+        display:none;
+      }
+      ul li {
+        
+        a {
+          padding:8px;
+        }
+      }
+    }
+  }
+  
   #game-404-canvas {
     height:300px;
   }
@@ -284,11 +310,6 @@
 	div.content > section.three-fourths > hgroup h1 {font-size:1.75em;}
   
 	div.content > aside[role="sidebar"] {
-    .scroll-links {
-      .ss-icon {
-        display:none;
-      }
-    }
     
     &.scrolled {
       .scroll-links {

@@ -1153,10 +1153,30 @@ div.content > aside[role="sidebar"] section.skills article ul li:hover .progress
 
 /* portfolio */
 div.content.portfolio-page {
-	max-width:1406px;
+	max-width:1278px;
+  
+  &:not(.portfolio-single) {
+    header {
+      h2 {
+        .ss-icon {
+          vertical-align: middle;
+          margin-right: 5px;
+          color: @grayD1;
+        }
+      }
+    }
+    
+  	*[role="sidebar"] {
+      width:12%;
+  		max-width:153px;
+    }
+  }
+  
+  .nine-tenths {
+    width:88%;
+  }
 	
 	*[role="sidebar"] {
-		max-width:281px;
   
     &.active a {
       background:rgba(239,75,109,0.5);
@@ -1179,13 +1199,15 @@ div.content.portfolio-page {
 						font-family:'Source Sans Pro', Arial, Sans-serif;
 						text-shadow:-2px 2px 0 #ef4b6d;
 						display:block;
-						padding:12px 12px 8px;
+						padding:12px 12px 11px 18px;
 						background:rgba(239,75,109,0.5);
 						color:#fff;
 						border-bottom:1px dotted rgba(239,75,109,0.5);
 						
 						.ss-icon {
-							margin-right:10px;
+							margin-right:8px;
+              vertical-align: middle;
+              opacity: .5;
 						}
 					}
 				
@@ -1206,7 +1228,7 @@ div.content.portfolio-page {
 							width: 0;
 							position: absolute;
 							pointer-events: none;
-							border-width: 22px 26px;
+							border-width: 25px 26px;
 								border-style: solid;
 								border-color:transparent transparent transparent #666 ;
 							top: 0;

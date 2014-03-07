@@ -7,7 +7,7 @@ get_header('portfolio'); ?>
 <!-- content -->
 <div class="content portfolio-page">
 	<?php get_sidebar('left'); ?>
-	<section class="four-fifths right">
+	<section class="nine-tenths right">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; ?>
@@ -20,7 +20,7 @@ get_header('portfolio'); ?>
 		<!-- web -->
 		<section id="web">
 			<header>
-				<h2><i class="ss-icon ss-standard">&#x1F30E;</i> Web Design</h2>
+				<h2><i class="ss-icon ss-standard">&#x1F30E;</i> Web Design &amp; Development</h2>
 			</header>
 			<?php query_posts('category_name=web-design-portfolio'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -122,7 +122,7 @@ get_header('portfolio'); ?>
 		<!-- game -->
 		<section id="game">
 			<header>
-				<h2><i class="ss-icon ss-symbolicons-block">&#x1F3AE;</i> Game Art &amp; Design</h2>
+				<h2><i class="ss-icon ss-symbolicons-block">&#x1F3AE;</i> Game Art, Design, &amp; Development</h2>
 			</header>
 			<?php query_posts('category_name=game-art-portfolio'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
