@@ -6,3 +6,9 @@
      -moz-box-sizing: @box-sizing;
           box-sizing: @box-sizing;
 }
+
+.transition(@args: .2s all) {
+  -webkit-transition: @args;
+     -moz-transition: @args;
+          transition: @args;
+}

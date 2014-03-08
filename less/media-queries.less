@@ -88,6 +88,34 @@
 	.hidden-tablet {
 	  display: none;
 	}
+  
+  .carousel-control {
+    top: 0;
+    left: 15px;
+    width: 70px;
+    height: 100%;
+    margin-top: 0;
+    font-size: 20px;
+  	padding:26% 0 12px;
+    font-weight: 100;
+    line-height: 30px;
+    color: @white;
+    text-align: center;
+    background: fade(@black,50%);
+    opacity: .15;
+    filter: alpha(opacity=15);
+    box-sizing:border-box;
+    
+    &.right {
+      border-width: 0 1px 0 0;
+      right:0;
+    }
+    
+    &.left {
+      border-width: 0 0 0 1px;
+      left:0;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 960px) {

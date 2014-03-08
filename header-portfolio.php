@@ -19,8 +19,9 @@
 </head>
 <body data-spy="scroll" data-target="#scroll-links" <?php body_class(); ?>>
 <?php include_once("analyticstracking.php") ?>
+
 <!-- header -->
-<header id="top" role="banner">
+<header role="banner" class="sitenav">
 	<nav role="navigation sitemap">
 		<div class="title left"><a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">The Catt Suite</a></div>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu right' ) ); ?>
