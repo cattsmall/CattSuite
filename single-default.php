@@ -14,9 +14,11 @@ get_header('single'); ?>
 		<section class="blog">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?>>
-					<header><h1><?php the_title(); ?></h1></header>
-					<section class="meta"><?php entry_meta(); ?> - <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Back to all blog posts</a></section>
-					<?php the_content(); ?>
+               <div class="post-content">
+   					<header><h1><?php the_title(); ?></h1></header>
+   					<section class="meta"><?php entry_meta(); ?> - <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Back to all blog posts</a></section>
+   					<?php the_content(); ?>
+               </div>
 					<?php comments_template( '', true ); ?>
 				</article>
 			<?php endwhile; ?>
