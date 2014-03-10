@@ -433,23 +433,72 @@ article.post .fillintheblank {padding:1em; border:1px solid #ececec; background:
 }
 
 /* front page */
-div.content > aside[role="sidebar"] section.skills {padding:20px; position:relative;}
-div.content > aside[role="sidebar"] section.skills > header {border-bottom: 1px dotted #cccccc;}
-div.content > aside[role="sidebar"] section.skills header {position:relative;}
-div.content > aside[role="sidebar"] section.skills h2 {font-size:20px; font-family:'Quicksand', Arial, Sans-serif; text-transform:uppercase;}
-div.content > aside[role="sidebar"] section.skills h2 > span {font-size:12px; font-weight:normal; font-family:'Source Sans Pro', Arial, Sans-serif; text-transform:none;}
-div.content > aside[role="sidebar"] section.skills article header {position:relative; margin-top:5px;}
-div.content > aside[role="sidebar"] section.skills article header h3 {font-weight:bold; font-size:20px;}
-div.content > aside[role="sidebar"] section.skills article ul {}
-div.content > aside[role="sidebar"] section.skills article ul li {list-style:none; border-bottom:1px dotted #ccc; padding:5px 5% 12px;
-		-webkit-transition: .25s background-color, box-shadow;
-	-moz-transition: .25s background-color, box-shadow;
-	-o-transition: .25s background-color, box-shadow;
-	-ms-transition: .25s background-color, box-shadow;
-	transition: .25s background-color, box-shadow;}
-div.content > aside[role="sidebar"] section.skills article ul li:hover {background:#fff; box-shadow: 0 0 10px #fff, 0 0 5px rgba(0,0,0,.5);}
-div.content > aside[role="sidebar"] section.skills article ul li:hover .progress {background:#ececec;}
-div.content > aside[role="sidebar"] section.skills article ul li:hover .progress .bar {background:#EF4B6D;}
+div.content > aside[role="sidebar"] section.skills {
+  padding:20px;
+  position:relative;
+  
+  > header {
+    border-bottom: 1px dotted #cccccc;
+  }
+  
+   header {
+     position:relative;
+   }
+   
+   h2 {
+     font-size:20px;
+     font-family:'Quicksand', Arial, Sans-serif;
+     text-transform:uppercase;
+     
+      > span {
+        font-size:12px;
+        font-weight:normal;
+        font-family:'Source Sans Pro', Arial, Sans-serif;
+        text-transform:none;
+      }
+   }
+   
+   article {
+     header {
+       margin-top:5px;
+       
+       h3 {
+         font-weight:bold;
+         font-size:20px;
+       }
+     }
+     
+     ul {
+       li {
+        list-style:none;
+        border-bottom:1px solid fade(@black, 5%);
+        padding:5px 5% 12px;
+        -webkit-transition: .25s background-color, box-shadow;
+        -moz-transition: .25s background-color, box-shadow;
+        -o-transition: .25s background-color, box-shadow;
+        -ms-transition: .25s background-color, box-shadow;
+        transition: .25s background-color, box-shadow;
+        
+        h4 {
+          margin-bottom:3px;
+        }
+        
+        &:hover {
+          background:@white;
+          box-shadow: 0 0 10px @white, 0 0 5px rgba(0,0,0,.5);
+          
+          .progress {
+            background:#ececec;
+            
+            .bar {
+              background:@pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /* portfolio */
 div.content.portfolio-page {

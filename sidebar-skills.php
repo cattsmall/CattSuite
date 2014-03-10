@@ -6,7 +6,7 @@
 				<h2>Skills <span class="visible-desktop">(hover for comments!)</span> <span class="hidden-desktop">(tap for comments!)</span></h2>
 				<button class="btn absolute right top hidden-tablet-horiz">Show/Hide</button>
 			</header>
-			<article class="hidden-tablet">
+			<article class="hidden-tablet-vert">
 				<header><h3>Digital</h3></header>
 				<ul>
 					<li rel="tooltip" title="I've designed websites of all kinds including web apps and ecommerce sites. I enjoy designing and improving user experiences." data-placement="top">
@@ -59,7 +59,7 @@
 					</li>
 				</ul>
 			</article>
-			<article class="hidden-tablet">
+			<article class="hidden-tablet-vert">
 				<header><h3>Print &amp; Branding</h3></header>
 				<ul>
 					<li rel="tooltip" title="I've made &amp; printed high-quality posters. I've even done screenprinting!" data-placement="top">

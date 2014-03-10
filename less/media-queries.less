@@ -56,9 +56,9 @@
 	div.content > [role="sidebar"].one-fourth.right.fixed.scrolled {right:auto; margin-left:1125px;}
 }
 
-@media (min-width: 960px) {
+@media (min-width: 961px) {
   .hidden-tablet-horiz {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -125,6 +125,10 @@
 }
 
 @media (max-width: 960px) {
+  .hidden-tablet-vert {
+    display: none;
+  }
+  
 	div.content > *[role="sidebar"] {
     &.one-fourth, &.one-fifth, &.one-twentieth, &.one-tenth {
       width:100% !important;
@@ -242,6 +246,7 @@
 }
 
 @media (max-width: 767px) {
+  
 	body > header[role="banner"] > nav ul li a {padding:8px 10px;}
 
 	body > section.carousel article.catt .body {display:none;}

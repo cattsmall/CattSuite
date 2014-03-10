@@ -46,7 +46,7 @@
 		});
       
       $(window).resize( function() {
-         if ( $(document).width() >= 960 ) {
+         if ( $(document).width() >= 950 ) {
    			$('section.skills > article').attr("style","");
    			$('section.blog-sidebar .menu-categories-container').attr("style","");
          }
