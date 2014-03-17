@@ -60,6 +60,48 @@
   .hidden-tablet-horiz {
     display: none;
   }
+  
+  div.content.portfolio-page .nine-tenths {
+    z-index:10;
+    position:relative;
+  }
+  
+	.scroll-links {
+		ul {		
+			li {
+        .transition(.25s all);
+		  
+        &:first-child {
+          margin-left:150px;
+          height:50px;
+          width: 100%;
+          
+          + li {
+            margin-top:-50px;
+            transition-delay:.2s;
+          }
+		    }
+			}
+		}
+	}
+	
+	.scrolled {
+	  .scroll-links {
+	    ul li {
+	      &:first-child {
+          position:relative;
+          height:auto;
+          transition-delay:.2s;
+          margin-left:0;
+          
+          + li {
+            margin-top:0;
+            transition-delay:0;
+          }
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) and (max-width:1024px) {
@@ -165,13 +207,45 @@
 	div.content > aside[role="sidebar"] section.skills article {width:48%; float:left; padding-right:2%;}
 	div.content > aside[role="sidebar"] section.skills article header {width:85%; padding:5px 0 5px 2.5%;}
 
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li {margin-top:10px;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li > a {display:inline-block; margin-right:5px; width:auto; display:inline-block; padding:5px 10px; border-radius:3px;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li > a:after, div.content > section[role="sidebar"] > aside > ul > li.current-menu-item > a:after {display:none;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li {margin-top:5px;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li {display:inline-block;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li a {display:inline-block; margin-right:5px; padding:5px 10px; border-radius:3px; border:0; background:#facad5;}
-	div.content > section[role="sidebar"] > aside > .menu-categories-container > ul > li ul li.current-menu-item a {background:#999; color:#fff;}
+	div.content > section[role="sidebar"] > aside > .menu-categories-container {
+    
+	  > ul {
+      margin-top:20px;
+    
+      > li {
+           display:inline;
+    
+           a {
+             margin:0 5px 8px 0;
+             width:auto;
+             display:inline-block;
+             padding:10px 25px;
+             border-radius:3px;
+           }
+      
+           ul {
+             display:inline;
+    
+            li {
+               margin-top:5px;
+               display:inline;
+
+               a {
+                 border:0;
+                 background:@pinkL1;
+                 display:inline-block;
+                 padding:10px 15px;
+               }
+
+               &.current-menu-item a {
+                 background:#999;
+                 color:@white;
+               }
+             }
+           }
+         }
+	  }
+	}
 	
   div.content.portfolio-page > aside[role="sidebar"] {
     
@@ -197,6 +271,15 @@
         &.active a {
           background:rgba(239,75,109,0.5);
         }
+        
+        &:first-child {
+          .transition(.2s all);
+          text-align:center;
+          position:fixed;
+          bottom:-100px;
+          right:0;
+          width:100px;
+        }
       }
     }
     
@@ -204,11 +287,7 @@
       .scroll-links {
         ul li {
           &:first-child {
-            text-align:center;
-            position:fixed;
             bottom:0;
-            right:0;
-            width:100px;
             
             a {
               border:0;

@@ -22,6 +22,8 @@ p {
   background:#000;
   top:0;
   font-family:'Quicksand', Arial, Sans-serif;
+  position: relative;
+  z-index: 1000;
   
   > nav {
     padding:10px 15px 0;
@@ -151,6 +153,7 @@ div.content {
 					margin-bottom:10px;
 				}
 				.post {
+          
 					+ .post {
 						padding:30px 0 0;
 					}
@@ -200,7 +203,15 @@ article.post {padding:10px 0;
 		}
 	}
 	ul, ol:not(.commentlist) {padding:0 0 20px 30px;}
-	li:not(.comment) {margin-bottom:10px; font-style:italic; font-size:1.15em; text-shadow: -1px 1px 0 #FACAD5;}
+	li:not(.comment) {
+    margin-bottom:10px;
+    font-size:1.15em;
+    // text-shadow: -1px 1px 0 #FACAD5;
+    
+    p {
+      font-size:1em;
+    }
+  }
 	&.half {width:48.5%; padding:10px 3% 10px 0;
 		&:nth-child(odd) {padding:10px 0;}
 	}
@@ -231,8 +242,8 @@ body.blog section.blog article header > h1, body.archive section.blog article he
   margin: 0 0 .25em;
 }
 
-body.blog {
-  .excerpt {
+body.blog, body.category {
+  .excerpt, .blog-page {
     h1 {
       font-family:@display-copy;
       font-size:24px;
@@ -261,18 +272,17 @@ body.blog {
 }
 .single section.blog article.post.category-portfolio figure.item {margin:25px 0 0;}
 .single section.blog article.post section.meta, .page section.blog article.page section.meta {font-size:14px; font-weight:bold; border-bottom:1px dotted #ccc; padding-bottom:5px; margin-bottom:20px;}
-section.blog article.post h3 {font-size:18px; position:relative; background:#666; padding:0 15px 3px 8px; display:inline-block; color:#fff; margin:15px 0 20px; text-shadow:-2px 2px 0 #333; line-height:1.75em;}
-section.blog article.post h3:after {
-	left: 100%;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-width:17px 16px;
-	border-style: solid;
-	border-color: #666 transparent #666 #666;
-	top: 0;
+section.blog article.post h3 {
+  font-size:28px;
+  position:relative;
+  background:#666;
+  padding:0 14px;
+  display:inline-block;
+  color:#fff;
+  margin:15px 0 20px;
+  text-shadow:-2px 2px 0 #333;
+  line-height:1.75em;
+  font-family:@display-copy;
 }
 section.blog article.post h4 {font-weight:bold;}
 section.blog article.post ul {padding:0 0 0 40px; margin:0 0 20px;}
@@ -544,7 +554,8 @@ div.content.portfolio-page {
 				list-style:none;
 			
 				li {
-					a {
+			
+      		a {
 						font-family:'Source Sans Pro', Arial, Sans-serif;
 						text-shadow:-2px 2px 0 #ef4b6d;
 						display:block;
@@ -585,7 +596,7 @@ div.content.portfolio-page {
 					}
 					
 			    &:first-child {
-			      display:none;
+            opacity:0;
 			    }
 				}
 			}
@@ -595,7 +606,7 @@ div.content.portfolio-page {
 		  .scroll-links {
 		    ul li {
 		      &:first-child {
-		        display:block;
+            opacity:1;
 					}
 				}
 			}
