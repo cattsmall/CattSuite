@@ -107,6 +107,10 @@ pre code {
   -moz-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+	animation:barslide 1 1.25s;
+	-moz-animation:barslide 1 1.25s ease; /* Firefox */
+	-webkit-animation:barslide 1 1.25s ease; /* Safari and Chrome */
+	-o-animation:alrunning 1 1.25s ease; /* Opera */
 }
 .progress .bar + .bar {
   -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.15), inset 0 -1px 0 rgba(0,0,0,.15);
