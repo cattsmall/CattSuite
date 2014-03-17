@@ -21,7 +21,7 @@
 <?php include_once("analyticstracking.php") ?>
 
 <!-- header -->
-<header role="banner" class="sitenav">
+<header role="banner" class="sitenav" id="top">
 	<nav role="navigation sitemap">
 		<div class="title left"><a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">The Catt Suite</a></div>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu right' ) ); ?>
