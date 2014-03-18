@@ -515,6 +515,11 @@ div.content.portfolio-page {
 	max-width:1278px;
   
   &:not(.portfolio-single) {
+    hgroup {
+      border-bottom: 1px dotted #facad5;
+      padding-bottom: 40px;
+    }
+    
     header {
       h2 {
         .ss-icon {
@@ -581,18 +586,18 @@ div.content.portfolio-page {
 							opacity:1;
 						}
 					
-						&:after {
-							left: 100%;
-							content: " ";
-							height: 0;
-							width: 0;
-							position: absolute;
-							pointer-events: none;
-							border-width: 25px 26px;
-								border-style: solid;
-								border-color:transparent transparent transparent #666 ;
-							top: 0;
-						}
+            // &:after {
+            //   left: 100%;
+            //   content: " ";
+            //   height: 0;
+            //   width: 0;
+            //   position: absolute;
+            //   pointer-events: none;
+            //   border-width: 25px 26px;
+            //     border-style: solid;
+            //     border-color:transparent transparent transparent #666 ;
+            //   top: 0;
+            // }
 					}
 					
 			    &:first-child {
@@ -850,6 +855,7 @@ span.required {
   width: 100%;
   padding: 16px 10px 15px;
   .box-sizing;
+  margin-left:0;
 }
 
 /* layouts */

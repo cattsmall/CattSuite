@@ -395,9 +395,16 @@
 @media (max-width: 500px) {
 	body > section.carousel .item {height:200px; /*background-size:150%;*/}
 	article.post.portfolio section.carousel .item {height:220px;}
-	div.content > section.three-fourths > hgroup h1 {font-size:2em;}
-	div.content > section.three-fourths > hgroup h2 {font-size:1.5em; font-weight:normal;}
   
+  div.content {
+  	section.three-fourths, section.four-fifths, section.nine-tenths, section.nineteen-twentieths {
+      > hgroup {
+        h1 {font-size:2em;}
+        h2 {font-size:1.5em; font-weight:normal;}
+      }
+    }
+  }
+    
   div.content.portfolio-page > aside[role="sidebar"] {
     .scroll-links {
       
