@@ -14,6 +14,7 @@
 		$("[rel=tooltip]").tooltip();
 
 		$('.scroll-links').scrollspy();
+      setTimeout( "$('.scroll-links-sidebar').removeClass('visible-tablet-horiz');", 500 );
 
 		topDistance = 67;
 		  (function() {

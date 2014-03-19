@@ -34,10 +34,14 @@ get_header('portfolio'); ?>
 							$outicon = '';
 							if(count($source_meta)) {
 								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
 							}
 							?>
-							<h1><a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>
+							<h1>
+                        <a href="<?php echo $link; ?>"><?php the_title(); ?></a>
+                        <span class="portfolio-post-year"><?php the_time('Y') ?></span>
+                        <?php echo $outicon; ?>
+                     </h1>
 						</header>
 						<div>
 							<?php the_excerpt(); ?>
@@ -68,10 +72,14 @@ get_header('portfolio'); ?>
 							$outicon = '';
 							if(count($source_meta)) {
 								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
 							}
 							?>
-							<h1><a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>
+							<h1>
+                        <a href="<?php echo $link; ?>"><?php the_title(); ?></a>
+                        <span class="portfolio-post-year"><?php the_time('Y') ?></span>
+                        <?php echo $outicon; ?>
+                     </h1>
 						</header>
 						<div>
 							<?php the_excerpt(); ?>
@@ -102,10 +110,14 @@ get_header('portfolio'); ?>
 							$outicon = '';
 							if(count($source_meta)) {
 								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
 							}
 							?>
-							<h1><a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>
+							<h1>
+                        <a href="<?php echo $link; ?>"><?php the_title(); ?></a>
+                        <span class="portfolio-post-year"><?php the_time('Y') ?></span>
+                        <?php echo $outicon; ?>
+                     </h1>
 						</header>
 						<div>
 							<?php the_excerpt(); ?>
@@ -136,10 +148,14 @@ get_header('portfolio'); ?>
 							$outicon = '';
 							if(count($source_meta)) {
 								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
 							}
 							?>
-							<h1><a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>
+							<h1>
+                        <a href="<?php echo $link; ?>"><?php the_title(); ?></a>
+                        <span class="portfolio-post-year"><?php the_time('Y') ?></span>
+                        <?php echo $outicon; ?>
+                     </h1>
 						</header>
 						<div>
 							<?php the_excerpt(); ?>

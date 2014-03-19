@@ -13,7 +13,7 @@
 	<script>
 		$("[rel=tooltip]").tooltip();
       
-      setTimeout( "$('.scroll-links-sidebar').removeClass('hide');", 500 );
+      setTimeout( "$('.scroll-links-sidebar').removeClass('visible-tablet-horiz');", 500 );
 
 		topDistance = 58;
 		  (function() {

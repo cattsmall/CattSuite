@@ -49,37 +49,39 @@ get_header('home'); ?>
 			<!-- query portfolio -->
 			<?php query_posts('category_name=portfolio&showposts=2'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article <?php post_class('half'); ?>>
-					<hgroup>
-						<section class="post-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></section>
-							<?php 
-							$link = get_permalink();
-							$source_meta = get_post_meta(get_the_ID(), 'source');
-							if(count($source_meta)) {
-								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+				<article <?php post_class('half portfolio-post-thumbnail'); ?>>
+					<section class="post-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></section>
+						<?php 
+						$link = get_permalink();
+						$source_meta = get_post_meta(get_the_ID(), 'source');
+						if(count($source_meta)) {
+							$sourcelink = $source_meta[0];
+							$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+						}
+						?>
+						<h1><?php 
+							if(has_category("Web Design")) {
+								$categoryicon = '<i class="ss-icon ss-standard" rel="tooltip" data-title="Web Design">&#x1F30E;</i>';
+								echo $categoryicon;
 							}
-							?>
-							<h1><?php 
-								if(has_category("Web Design")) {
-									$categoryicon = '<i class="ss-icon ss-standard" rel="tooltip" data-title="Web Design">&#x1F30E;</i>';
-									echo $categoryicon;
-								}
-								if(has_category("Mobile Design")) {
-									$categoryicon = '<i class="ss-icon ss-standard" rel="tooltip" data-title="Mobile Design">&#x1F4F1;</i>';
-									echo $categoryicon;
-								}
-								if(has_category("Print Design")) {
-									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Print Design">&#x1F4D6;</i>';
-									echo $categoryicon;
-								}
-								if(has_category("Game Art &amp; Design")) {
-									$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Game Art & Design">&#x1F3AE;</i>';
-									echo $categoryicon;
-								}
-								 ?> <a href="<?php echo $link; ?>"><?php the_title(); ?></a> <?php echo $outicon; ?> <span class="portfolio-post-year"><?php the_time('Y') ?></span></h1>
-					</hgroup>
-					<?php the_excerpt(); ?>
+							if(has_category("Mobile Design")) {
+								$categoryicon = '<i class="ss-icon ss-standard" rel="tooltip" data-title="Mobile Design">&#x1F4F1;</i>';
+								echo $categoryicon;
+							}
+							if(has_category("Print Design")) {
+								$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Print Design">&#x1F4D6;</i>';
+								echo $categoryicon;
+							}
+							if(has_category("Game Art &amp; Design")) {
+								$categoryicon = '<i class="ss-icon ss-symbolicons-block" rel="tooltip" data-title="Game Art & Design">&#x1F3AE;</i>';
+								echo $categoryicon;
+							}
+							 ?>
+                      <a href="<?php echo $link; ?>"><?php the_title(); ?></a>
+                      <span class="portfolio-post-year"><?php the_time('Y') ?></span>
+                      <?php echo $outicon; ?>
+                   </h1>
+					<!-- <?php the_excerpt(); ?> -->
 				</article>
 			<?php endwhile; ?>
 			<div class="clearfix"></div>	

@@ -146,6 +146,16 @@ div.content {
 				border-top:1px dotted #facad5;
 				border-bottom:1px dotted #facad5;
 				padding-bottom:35px;
+        
+        .portfolio-post-thumbnail {
+          h1 {
+            text-align:center;
+            
+            .ss-icon {
+              vertical-align:middle;
+            }
+          }
+        }
 			}
 			
 			&.blog {
@@ -173,8 +183,39 @@ div.content {
 		section > header > span {display:inline-block; margin-left:10px; font-size:12px; border-bottom:1px dotted #ccc;}
 	}
 }
+
+.outside-link {
+  background:@pink;
+  padding:0 3px 0 5px;
+  color:@white;
+  border-radius:3px;
+  margin-left:3px;
+  
+  .ss-icon {
+    vertical-align:middle;
+    font-size:12px;
+  }
+  
+  &:visited {
+    color:@white;
+    background:@grayD1;
+  }
+}
+
 .page-template-page-about-php div.content > section.three-fourths > hgroup, .page-template-page-sales-php div.content > section.three-fourths > hgroup {margin-bottom:35px;}
-section.post-thumbnail {overflow:hidden; max-height:350px; border:1px solid #999; box-shadow:0 0 8px rgba(0,0,0,0.25); margin-bottom:.5em;}
+section.post-thumbnail {
+  overflow:hidden;
+  max-height:350px;
+  border:1px solid #999;
+  box-shadow:0 0 5px rgba(0,0,0,0.25);
+  margin-bottom:.5em;
+  
+  &:hover {
+    img {
+      opacity:.75;
+    }
+  }
+}
 section.post-thumbnail img {width:100%;}
 
 .blog div.content > section.three-fourths > section, div.content > section.three-fourths.blog-page > section {padding-top:0;}
@@ -669,6 +710,17 @@ div.content.portfolio-single {
   
   .main-content-container {
     float:right;
+    
+    .btn-cta {
+      padding: 16px 18px 13px;
+      .box-sizing;
+      margin-left:0;
+      font-size: 16px;
+      
+      .ss-icon {
+        vertical-align:middle;
+      }
+    }
   }
 	
 	section.blog {
