@@ -40,6 +40,35 @@
     }
   }
   
+	.scroll-links {
+		ul {
+			li {
+        .transition(.25s all);
+		  
+        &:first-child {
+          
+          + li {
+            transition-delay:.2s;
+          }
+		    }
+			}
+		}
+	}
+	
+	.scrolled {
+	  .scroll-links {
+	    ul li {
+	      &:first-child {
+          transition-delay:.2s;
+          
+          + li {
+            transition-delay:0;
+          }
+				}
+			}
+		}
+	}
+  
   .visible-tablet-horiz {
     display: none;
   }
@@ -98,7 +127,6 @@
 	.scroll-links {
 		ul {
 			li {
-        .transition(.25s all);
 		  
         &:first-child {
           margin-left:150px;
@@ -107,7 +135,6 @@
           
           + li {
             margin-top:-50px;
-            transition-delay:.2s;
           }
 		    }
 			}
@@ -120,12 +147,10 @@
 	      &:first-child {
           position:relative;
           height:auto;
-          transition-delay:.2s;
           margin-left:0;
           
           + li {
             margin-top:0;
-            transition-delay:0;
           }
 				}
 			}
