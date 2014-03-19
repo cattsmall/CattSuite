@@ -7,7 +7,7 @@ get_header('portfolio'); ?>
 <!-- content -->
 <div class="content portfolio-page">
 	<?php get_sidebar('left'); ?>
-	<section class="nine-tenths right">
+	<section class="nine-tenths right main-content-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; ?>

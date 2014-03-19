@@ -31,7 +31,7 @@ get_header('home'); ?>
 <div class="content">
 	<?php get_sidebar('skills'); ?>
 	<!-- portfolio work & blog -->
-	<section class="three-fourths">
+	<section class="three-fourths main-content-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; ?>

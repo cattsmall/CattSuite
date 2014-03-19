@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="content">
 	<!-- portfolio work & blog -->
 	<?php get_sidebar(); ?>
-	<section class="three-fourths blog-page">
+	<section class="three-fourths blog-page main-content-container">
 		<!-- <section class="blog"> -->
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article  <?php post_class(); ?>>

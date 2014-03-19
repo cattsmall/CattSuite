@@ -9,7 +9,7 @@ get_header('home'); ?>
 <!-- content -->
 <div class="content">
 	<?php get_sidebar(); ?>
-	<section class="three-fourths">
+	<section class="three-fourths main-content-container">
 		<!-- blog -->
 		<!-- <section class="blog"> -->
 			<?php if ( is_home() ) {

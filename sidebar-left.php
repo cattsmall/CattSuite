@@ -1,5 +1,5 @@
 <!-- sidebar -->
-<aside role="sidebar" class="one-tenth left fixed">	
+<aside role="sidebar" class="one-tenth left fixed scroll-links-sidebar hide">	
 	<nav class="scroll-links" id="scroll-links">
       <!-- <header><h4>Jump to a Section</h4></header> -->
 		<ul class="nav">

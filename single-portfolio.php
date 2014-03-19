@@ -10,7 +10,7 @@ get_header('single'); ?>
 <div class="content portfolio-page portfolio-single">
 	<!-- portfolio work & blog -->
 	<?php include(TEMPLATEPATH."/sidebar-2.php");?>
-	<section class="nineteen-twentieths">
+	<section class="nineteen-twentieths main-content-container">
 		<section class="blog">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?>>

@@ -12,7 +12,8 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min-ck.js"></script>
 	<script>
 		$("[rel=tooltip]").tooltip();
-
+      
+      setTimeout( "$('.scroll-links-sidebar').removeClass('hide');", 500 );
 
 		topDistance = 58;
 		  (function() {

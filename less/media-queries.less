@@ -16,6 +16,13 @@
 	body > section.carousel .item:nth-child(5) {background-image:url('img/slides/1-high1500x500/algame.jpg');}
 	body > section.carousel .item:nth-child(6) {background-image:url('img/slides/1-high1500x500/edu-wires.jpg');}
 	body > section.carousel .item:nth-child(7) {background-image:url('img/slides/1-high1500x500/vggp.jpg');}
+  
+  .main-content-container > * {
+  	-webkit-animation:flashin 1 .5s; /* Safari and Chrome */
+  	-moz-animation:flashin 1 .5s; /* Firefox */
+  	-o-animation:flashin 1 .5s; /* Opera */
+  	animation:flashin 1 .5s;
+  }
 }
 
 @media (min-width: 961px) and (max-width:1024px) {
@@ -61,13 +68,22 @@
     display: none;
   }
   
-  div.content.portfolio-page .nine-tenths {
-    z-index:10;
-    position:relative;
+  div.content.portfolio-page {
+    .nine-tenths {
+      z-index:10;
+      position:relative;
+    }
+    
+    .scroll-links-sidebar {
+    	-webkit-animation:slideleft 1 .5s ease; /* Safari and Chrome */
+    	-moz-animation:slideleft 1 .5s ease; /* Firefox */
+    	-o-animation:slideleft 1 .5s ease; /* Opera */
+    	animation:slideleft 1 .5s ease;
+    }
   }
   
 	.scroll-links {
-		ul {		
+		ul {
 			li {
         .transition(.25s all);
 		  
@@ -102,6 +118,12 @@
 			}
 		}
 	}
+  
+  div.content.portfolio-single {	
+  	section[role="sidebar"] {
+      position:absolute;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width:1024px) {
@@ -169,6 +191,15 @@
 @media (max-width: 960px) {
   .hidden-tablet-vert {
     display: none;
+  }
+  
+  div.content.portfolio-page {
+    .scroll-links-sidebar {
+    	-webkit-animation:slidedown 1 .75s ease; /* Safari and Chrome */
+    	-moz-animation:slidedown 1 .75s ease; /* Firefox */
+    	-o-animation:slidedown 1 .75s ease; /* Opera */
+    	animation:slidedown 1 .75s ease;
+    }
   }
   
 	div.content > *[role="sidebar"] {
