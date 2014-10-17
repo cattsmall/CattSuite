@@ -3,6 +3,17 @@
     font-family:'Source Sans Pro', Arial, Sans-serif;
     background:#f3f3f3;
     padding:0 100px 0;
+    
+    &:after {
+      content:"Glad you liked this enough to print it! Check out more at www.cattsmall.com.";
+      display:block;
+      font-weight:200;
+      border-top:1px dotted #ececec;
+      padding-top:10px;
+      color:#ccc;
+      margin-top:30px;
+      font-size:.8em;
+    }
   }
   
   * {
@@ -55,6 +66,12 @@
       
       p {
         margin:0;
+      }
+      
+      &.portfolio-post-thumbnail {
+        h1 {
+          margin:10px 0 20px;
+        }
       }
     }
     
@@ -111,5 +128,21 @@
     &.aligncenter {
       margin:0 auto;
     }
+  }
+  
+  .carousel {
+    margin-top:50px;
+    
+    figure {
+      display:none;
+      
+      &:first-of-type {
+        display:block;
+      }
+    }
+  }
+  
+  .crayon-plain-wrap, .crayon-info {
+    display:none;
   }
 }

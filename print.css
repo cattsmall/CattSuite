@@ -4,6 +4,16 @@
     background: #f3f3f3;
     padding: 0 100px 0;
   }
+  body:after {
+    content: "Glad you liked this enough to print it! Check out more at www.cattsmall.com.";
+    display: block;
+    font-weight: 200;
+    border-top: 1px dotted #ececec;
+    padding-top: 10px;
+    color: #ccc;
+    margin-top: 30px;
+    font-size: .8em;
+  }
   * {
     text-decoration: none;
   }
@@ -51,6 +61,9 @@
   div.content > section article p {
     margin: 0;
   }
+  div.content > section article.portfolio-post-thumbnail h1 {
+    margin: 10px 0 20px;
+  }
   div.content > section .post-content ul {
     margin-top: .5em;
   }
@@ -92,5 +105,18 @@
   }
   img.aligncenter {
     margin: 0 auto;
+  }
+  .carousel {
+    margin-top: 50px;
+  }
+  .carousel figure {
+    display: none;
+  }
+  .carousel figure:first-of-type {
+    display: block;
+  }
+  .crayon-plain-wrap,
+  .crayon-info {
+    display: none;
   }
 }
