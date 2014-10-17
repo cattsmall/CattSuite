@@ -1,0 +1,96 @@
+@media print {
+  body {
+    font-family: 'Source Sans Pro', Arial, Sans-serif;
+    background: #f3f3f3;
+    padding: 0 100px 0;
+  }
+  * {
+    text-decoration: none;
+  }
+  *[role="sidebar"],
+  .wpcf7,
+  .meta,
+  .nav-menu,
+  .page-footer,
+  .btn-cta,
+  .outside-link,
+  .ss-icon,
+  .seemore-link,
+  .readmore-link {
+    display: none;
+  }
+  a {
+    color: #333;
+  }
+  .sitenav {
+    margin-bottom: 40px;
+  }
+  .brand {
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #ccc;
+    border-bottom: 1px dotted #ececec;
+    padding: 0 0 10px;
+  }
+  div.content > section h1 {
+    font-size: 1.5em;
+  }
+  div.content > section h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  div.content > section header h2 {
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  div.content > section article h1 {
+    font-size: 1.25em;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  div.content > section article p {
+    margin: 0;
+  }
+  div.content > section .post-content ul {
+    margin-top: .5em;
+  }
+  div.content > section .post-content li {
+    margin-bottom: 5px;
+  }
+  div.content > section .post-content h1 {
+    margin-bottom: .75em;
+  }
+  div.content > section .post-content h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  div.content > section .post-content h3 {
+    font-size: 1.25em;
+    padding: 0;
+    color: #666;
+    margin: 0;
+  }
+  div.content > section .post-content h4 {
+    margin: 0;
+  }
+  div.content > section .post-content p {
+    margin: 0 0 1em;
+  }
+  .comments-area {
+    display: none;
+  }
+  p,
+  ul,
+  li {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  img.aligncenter {
+    margin: 0 auto;
+  }
+}

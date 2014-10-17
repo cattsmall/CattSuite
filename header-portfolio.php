@@ -13,7 +13,8 @@
 	<title><?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php if ( !(is_404()) && (is_single()) or (is_page()) or (is_archive()) ) { ?> <?php } ?> </title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" media="print">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 </head>
