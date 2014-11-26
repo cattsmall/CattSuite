@@ -148,7 +148,7 @@ get_header('portfolio'); ?>
 							$outicon = '';
 							if(count($source_meta)) {
 								$sourcelink = $source_meta[0];
-								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Visit the website" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
+								$outicon = '<a href="'.$sourcelink.'" class="outside-link" rel="tooltip" data-title="Play the game" target="_blank"><i class="ss-icon ss-standard">&#xEE00;</i></a>';
 							}
 							?>
 							<h1>

@@ -23,7 +23,11 @@ get_header('single'); ?>
    						$outicon = '';
    						if(count($source_meta)) {
    							$sourcelink = $source_meta[0];
-   							$outlink = '<a href="'.$sourcelink.'" class="btn btn-cta" target="_blank">Visit the website <i class="ss-icon ss-standard">&#xEE00;</i></a>';
+                        if(has_category("Game Art &amp; Design")) {
+      							$outlink = '<a href="'.$sourcelink.'" class="btn btn-cta" target="_blank">Play the game <i class="ss-icon ss-standard">&#xEE00;</i></a>';
+                        } else {
+      							$outlink = '<a href="'.$sourcelink.'" class="btn btn-cta" target="_blank">Visit the website <i class="ss-icon ss-standard">&#xEE00;</i></a>';
+                        }
    						}
    						echo $outlink;
    						?>
